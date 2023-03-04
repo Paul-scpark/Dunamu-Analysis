@@ -4,7 +4,7 @@ from tqdm import tqdm
 import csv, time
 
 ## 네이버 뉴스의 페이지 별로 뉴스 기사들을 확인하여 a 태그 정보 수집
-for idx, start_num in enumerate(tqdm(range(1, 200, 10))):
+for idx, start_num in enumerate(tqdm(range(1, 100000, 10))):
     # '두나무'를 키워드로 하여 최신 순서대로 네이버 뉴스의 page 별로 데이터 수집
     url = f'https://search.naver.com/search.naver?where=news&sm=tab_pge&query=%EB%91%90%EB%82%98%EB%AC%B4&sort=1&photo=0&field=0&pd=0&ds=&de=&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all&start={start_num}'
     
@@ -48,4 +48,4 @@ for idx, start_num in enumerate(tqdm(range(1, 200, 10))):
         except: pass
         
     if idx % 10 == 0:
-        time.sleep(10)
+        time.sleep(60)
