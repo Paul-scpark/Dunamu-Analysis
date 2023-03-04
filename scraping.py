@@ -29,8 +29,7 @@ for idx, start_num in enumerate(tqdm(range(1, 100000, 10))):
         
         try:
             news_title = soup.select_one('#title_area > span').text
-            news_date = soup.select_one('#ct > div.media_end_head.go_trans > div.media_end_head_info.nv_notrans > div.media_end_head_info_datestamp > div > span').text
-            news_date = news_date.split(' ')[0]
+            news_date = soup.select_one('#ct > div.media_end_head.go_trans > div.media_end_head_info.nv_notrans > div.media_end_head_info_datestamp > div > span').text.split(' ')[0]
             news_text = soup.select_one('#dic_area').find_all(text=True)
             news_text = ''.join(news_text).replace('\n', '').replace('\t', '').replace('\xa0', ' ').replace('  ', ' ')
             
@@ -44,7 +43,6 @@ for idx, start_num in enumerate(tqdm(range(1, 100000, 10))):
                 csv_writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 csv_writer.writerow(news_dic)
                 
-
         except: pass
         
     if idx % 10 == 0:
