@@ -26,7 +26,7 @@
 
 (1) [업비트 디지털 자산지수 (UBCI, Upbit Crypto Index)](https://datavalue.dunamu.com/feargreedindex#) - [PDF 참고](https://github.com/Paul-scpark/Dunamu-Analysis/blob/main/_Report_Fear_Greed_Index.pdf)
 
-- 업비트에서 산출 및 제공하는 지수. 
+- 업비트에서 산출 및 제공하는 지수
 - 디지털 자산 시장의 표준을 제시하고, 다양한 인덱스로 원화거래 마켓 시장의 흐름을 파악하기 위한 지수 체계
 - UBCI의 체계는 아래와 같이 4개의 대분류로 구성
    - Market Index (업비트 시장 대표 인덱스): 시장의 대표적인 표준 지수 제공
@@ -52,7 +52,7 @@
 (2) [디지털 자산 공포-탐욕 지수](https://datavalue.dunamu.com/feargreedindex#) - [PDF 참고](https://github.com/Paul-scpark/Dunamu-Analysis/blob/main/_Report_Fear_Greed_Index.pdf)
 
 - 거래소의 암호화폐 가격과 거래량 지표를 가공하여 제작한 지수. 암호화폐 시장의 심리 상황 파악 및 효율적인 가격 식별이 목적
-- 일반적인 공포지수는 S&P500 지수 기준으로 만든 변동성 지수인 VIX. 주가 상승 & VIX 하락, 주가 하락 & VIX 상승 = 공포지수
+- 일반적인 공포지수는 S&P500 기준으로 만든 변동성 지수인 VIX. 주가 상승 & VIX 하락, 주가 하락 & VIX 상승 = 공포지수
 - 거래소들의 서로 다른 구조와 가격으로 한국 디지털 자산 시장의 분위기와 괴리가 생길 수 있으므로, 국내용 지수를 만듦
 - 기존의 Fear & Greed Index, Crypto Fear & Greed Index는 정해둔 개별 지표에 대한 점수로 계산
 - 두나무는 모델을 통하여 공포-탐욕 지수를 계산
